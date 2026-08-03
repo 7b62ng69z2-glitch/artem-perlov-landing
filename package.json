@@ -1,0 +1,12 @@
+{
+  "name": "artem-perlov-landing",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "nodemailer": "^7.0.6"
+  }
+}
