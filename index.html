@@ -6,31 +6,39 @@
   <meta name="description" content="Артём Перлов — недвижимость в Санкт-Петербурге. Продажа, покупка, сопровождение сделки, новостройки, ипотека, аренда и переезд.">
   <meta name="theme-color" content="#061714">
   <title>Артём Перлов — недвижимость в Санкт-Петербурге</title>
-  <link rel="preload" as="image" href="assets/hero-desktop.png">
+  <link rel="preload" as="image" href="assets/hero-photo-desktop.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main>
-    <section class="desktop-image-section hero-desktop" aria-label="Первый экран">
-      <img src="assets/hero-desktop.png" alt="Артём Перлов — один человек отвечает за весь результат">
-      <a class="hotspot hero-telegram" href="https://t.me/Artem_Perlov" target="_blank" rel="noopener" aria-label="Написать Артёму в Telegram"></a>
-      <a class="hotspot hero-services" href="#services" aria-label="Перейти к услугам"></a>
-    </section>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-visual" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="hero-name">АРТЁМ ПЕРЛОВ</p>
+        <h1 id="hero-title">Один человек<br>отвечает за <span>весь результат</span></h1>
+        <p class="hero-lead">Я лично сопровождаю вас на всех этапах —<br>от первой встречи до успешного завершения сделки.</p>
 
-    <section class="hero-mobile" aria-label="Первый экран мобильной версии">
-      <div class="hero-mobile-overlay"></div>
-      <div class="hero-mobile-content">
-        <p class="eyebrow">АРТЁМ ПЕРЛОВ</p>
-        <h1>Один человек отвечает за <span>весь результат</span></h1>
-        <p class="lead">Я лично сопровождаю вас на всех этапах — от первой встречи до успешного завершения сделки.</p>
-        <div class="mobile-actions">
-          <a class="btn btn-gold" href="https://t.me/Artem_Perlov" target="_blank" rel="noopener">Написать в Telegram</a>
-          <a class="btn btn-outline" href="#services-mobile">Выбрать услугу</a>
+        <div class="hero-actions">
+          <a class="hero-btn hero-btn-primary" href="https://t.me/Artem_Perlov" target="_blank" rel="noopener">Написать в Telegram</a>
+          <a class="hero-btn hero-btn-secondary" href="#services">Выбрать услугу</a>
         </div>
-        <div class="mobile-benefits">
-          <span>16 лет в недвижимости</span>
-          <span>Стратегия и переговоры</span>
-          <span>Контроль всех этапов</span>
+
+        <div class="hero-benefits" aria-label="Преимущества">
+          <div class="hero-benefit">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 5 53 14v16c0 14-8 24-21 30C19 54 11 44 11 30V14L32 5Z"/><circle cx="32" cy="25" r="7"/><path d="M21 43c2-7 7-10 11-10s9 3 11 10"/></svg>
+            <span>16 лет в недвижимости<br>личное участие</span>
+          </div>
+          <div class="hero-benefit">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 57h24M25 51h14M29 45h6M32 7c9 0 16 7 16 16 0 7-4 11-8 15-3 3-4 5-4 7h-8c0-2-1-4-4-7-4-4-8-8-8-15 0-9 7-16 16-16Z"/><path d="m26 23 4 4 8-9"/></svg>
+            <span>Стратегия, переговоры,<br>защита интересов</span>
+          </div>
+          <div class="hero-benefit">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="16" y="10" width="32" height="46" rx="3"/><path d="M24 10V6h16v4M23 23h18M23 33h18M23 43h11"/><path d="m38 43 3 3 6-7"/></svg>
+            <span>Контроль всех этапов<br>и спокойствие для вас</span>
+          </div>
         </div>
       </div>
     </section>
