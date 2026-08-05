@@ -222,11 +222,11 @@ button { cursor: pointer; }
 .services { padding-bottom: 96px; }
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(20, minmax(0, 1fr));
+  grid-template-columns: repeat(10, minmax(0, 1fr));
   gap: 18px;
 }
 .service-card {
-  grid-column: span 4;
+  grid-column: span 2;
   min-height: 315px;
   display: flex;
   flex-direction: column;
@@ -247,8 +247,8 @@ button { cursor: pointer; }
   box-shadow: var(--shadow);
   outline: none;
 }
-.service-card--wide { grid-column: span 5; }
-.service-card:nth-last-child(-n+4) { grid-column: span 5; }
+.service-card--wide { grid-column: span 3; }
+.service-card:nth-last-child(-n+3) { grid-column: span 3; }
 .service-card__icon {
   width: 62px;
   height: 62px;
@@ -541,7 +541,7 @@ button { cursor: pointer; }
   .hero { min-height: 900px; background-position: 44% center; }
   .hero__benefits { gap: 24px; }
   .services__grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-  .service-card, .service-card--wide, .service-card:nth-last-child(-n+4) { grid-column: span 2; }
+  .service-card, .service-card--wide, .service-card:nth-last-child(-n+3) { grid-column: span 2; }
   .process__layout { grid-template-columns: 1fr; }
   .process__intro { max-width: 820px; }
   .process__intro p:last-child { max-width: 720px; }
@@ -577,7 +577,7 @@ button { cursor: pointer; }
   .section-heading h2, .process h2, .about h2 { font-size: clamp(45px, 12vw, 65px); }
   .services { padding-bottom: 68px; }
   .services__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-  .service-card, .service-card--wide, .service-card:nth-last-child(-n+4) { grid-column: span 1; min-height: 290px; padding: 28px 18px 24px; }
+  .service-card, .service-card--wide, .service-card:nth-last-child(-n+3) { grid-column: span 1; min-height: 290px; padding: 28px 18px 24px; }
   .service-card__title { font-size: 25px; }
 
   .process { padding-top: 70px; background-attachment: scroll; }
@@ -607,7 +607,7 @@ button { cursor: pointer; }
 
   .section-heading > p:last-child { font-size: 16px; }
   .services__grid { grid-template-columns: 1fr; }
-  .service-card, .service-card--wide, .service-card:nth-last-child(-n+4) { min-height: 0; }
+  .service-card, .service-card--wide, .service-card:nth-last-child(-n+3) { min-height: 0; }
 
   .steps { grid-template-columns: 1fr; }
   .step-card { min-height: 0; }
