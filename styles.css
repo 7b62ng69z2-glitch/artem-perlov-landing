@@ -302,3 +302,47 @@ button, input, textarea { font: inherit; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* =========================================================
+   FINAL TYPOGRAPHY SYSTEM
+   Poiret One — names, section headings, service/step titles,
+   accent statements and key quotes.
+   Onest — body copy, explanations, buttons, forms and contacts.
+   ========================================================= */
+
+/* Accent / display typography */
+.hero-name,
+.hero h1,
+.section-label,
+.services-mobile h2,
+.process-mobile h2,
+.about-mobile h2,
+.service-grid b,
+.steps-grid b,
+.about-kicker,
+.process-mobile blockquote,
+.about-mobile blockquote {
+  font-family: "Poiret One", "Onest", Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* Functional and reading typography */
+body,
+.hero-lead,
+.hero-btn,
+.hero-benefit,
+.section-intro,
+.process-mobile > p:not(.section-label),
+.about-mobile-content > p:not(.section-label):not(.about-kicker),
+.about-mobile li,
+.service-grid span,
+.steps-grid span,
+.contact-row,
+.lead-form input,
+.lead-form textarea,
+.lead-form button,
+.consent,
+.form-status,
+.site-footer {
+  font-family: "Onest", Arial, Helvetica, sans-serif;
+}
