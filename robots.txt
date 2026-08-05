@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shimmering-banoffee-270817.netlify.app/sitemap.xml

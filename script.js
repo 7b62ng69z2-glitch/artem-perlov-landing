@@ -15,14 +15,11 @@
       message.setSelectionRange(message.value.length, message.value.length);
     }
     document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    setTimeout(() => form?.elements?.name?.focus(), 450);
+    window.setTimeout(() => form?.elements?.name?.focus(), 500);
   };
 
   document.querySelectorAll('[data-service]').forEach((element) => {
-    element.addEventListener('click', (event) => {
-      event.preventDefault();
-      chooseService(element.dataset.service || '');
-    });
+    element.addEventListener('click', () => chooseService(element.dataset.service || ''));
   });
 
   form?.addEventListener('submit', async (event) => {
